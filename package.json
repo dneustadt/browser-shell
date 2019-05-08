@@ -8,7 +8,7 @@
     "postwget-nohost-sw": "wget https://unpkg.com/nohost/dist/nohost-sw.map -O dist/nohost-sw.map",
     "build": "parcel build src/index.html --detailed-report",
     "postbuild": "npm run wget-nohost-sw",
-    "build-travis": "parcel build src/index.html --public-url /browser-shell/",
+    "build-travis": "parcel build src/index.html --public-url /browser-shell/dist/",
     "postbuild-travis": "npm run wget-nohost-sw",
     "eslint": "eslint src",
     "eslint-fix": "eslint src --fix",
